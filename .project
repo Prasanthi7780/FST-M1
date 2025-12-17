@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>FST-TestNG</name>
+=======
+	<name>fst25-m1-java</name>
+>>>>>>> 61a1a0cbb36a35c30351e4a5a3aea95dbdee2ff3
 	<comment></comment>
 	<projects>
 	</projects>
