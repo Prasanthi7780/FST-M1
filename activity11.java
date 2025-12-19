@@ -1,31 +1,31 @@
 
+package activities;
+
 import java.util.HashMap;
+import java.util.Map;
 
-public class activity11 {
-    public static void main(String[] args) {
-        HashMap<Integer, String> hash_map = new HashMap<Integer, String>();
-        hash_map.put(1, "Red");
-        hash_map.put(2, "Green");
-        hash_map.put(3, "Blue");
-        hash_map.put(4, "White");
-        hash_map.put(5, "Black");
+public class Activity11 {
 
-        // Print the Map
-        System.out.println("The Original map: " + hash_map);
-        
-        // Remove one colour
-        hash_map.remove(4);
-        // Map after removing a colour
-        System.out.println("After removing White: " + hash_map);
-        
-        // Check if green exists
-        if(hash_map.containsValue("Green")) {
-            System.out.println("Green exists in the Map");
-        } else {
-            System.out.println("Green does not exist in the Map");
-        }
-        
-        // Print the size of the Map
-        System.out.println("Number of pairs in the Map is: " + hash_map.size());
-    }
+	public static void main(String[] args) {
+		Map<Integer,String> colours = new HashMap<Integer,String>();
+		colours.put(1, "Red");
+		colours.put(2, "Blue");
+		colours.put(3, "Black");
+		colours.put(4, "White");
+		colours.put(5, "Green");
+		
+		System.out.println("Available colours: "+ colours);
+		
+		colours.remove(3, "Black");
+		System.out.println("Available colours after removal: "+ colours);
+		
+		if(colours.containsValue("White")) {
+			System.out.println("White is available");
+		}
+		else
+			System.out.println("White is not present");
+		
+		System.out.println("Size of the map: "+ colours.size());
+	}
+
 }
